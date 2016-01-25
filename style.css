@@ -1,0 +1,81 @@
+body{
+  background-image :radial-gradient(circle,#e6e6e6 0,#808080 100%);
+  color: #404040;
+  font-family:Philosopher;
+}
+
+button{
+  margin:0 auto;
+}
+
+.quotes{
+  font-family:Cinzel;
+  font-size:25px;
+  text-align:center;
+}
+
+
+.navi{
+  text-align: center;
+  margin-top:30px;
+}
+
+
+.card{
+  background: white;
+  margin: auto;
+  margin-top:60px;
+  margin-bottom:50px;
+  width: 70%;
+  height: 350px;
+  box-shadow:2px 2px 2px #262626;
+  transition: background .5s, color .5s;
+}
+.card:hover{
+  color:#bfbfbf;
+  background:#595959;
+}
+
+
+.new-post{
+  z-index:2;
+  display:block;
+  position:absolute;
+  margin:0 auto;
+  font-size:25px;
+  color:white;
+  top:130px;
+  background:transparent;
+  padding:10px 10px 10px 10px;
+  border:1px solid transparent;
+  border-radius:20px;
+  opacity:0;
+  transition:opacity .2s, border .2s ease-in-out;
+}
+.new-post:hover{
+  border:1px solid white;
+  color:white;
+}
+.card:hover .new-post{
+  opacity:1;
+}
+
+
+.btn{
+  z-index:2;
+  position:relative;
+  top:290px;
+  left:50;
+  font-size:18px;
+  background:transparent;
+  border:1px solid transparent;
+  border-radius:20px;
+  padding:10px 10px 10px 10px;
+  transition:border .2s ease-in-out;
+}
+.btn:hover{
+  border:1px solid white;
+}
+.card:hover .btn{
+  color:white;
+}
